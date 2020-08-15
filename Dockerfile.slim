@@ -1,0 +1,9 @@
+FROM python:3.7-slim
+
+RUN python -m pip install --no-cache-dir \
+  robotframework \
+  robotframework-sshlibrary \
+  robotframework-jsonlibrary \
+  robotframework-requests
+
+CMD ["robot", "-d", "/testsuite", "/testsuite"]
