@@ -1,4 +1,4 @@
 output.xml
 report.html
 log.html
-*.robot
+#*.robot

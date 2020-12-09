@@ -1,9 +1,9 @@
-FROM python:3.7-alpine
+FROM python:3.6-alpine
 
 RUN apk --no-cache add --virtual .build-deps \
       build-base \
       libffi-dev \
-      libressl-dev \
+      openssl-dev \
  && python -m pip install --no-cache-dir \
        robotframework \
        robotframework-sshlibrary \
